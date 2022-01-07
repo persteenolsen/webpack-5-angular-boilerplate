@@ -1,0 +1,46 @@
+
+<h3 class="p-3 text-center">The selected Post from the Web API</h3>
+
+    
+ <br />
+
+
+<div class="table-responsive">
+	
+	Try to receive the selected post from the "jsonplaceholder" Web API<br /><br />
+	
+	 <div *ngIf="errorMessage != null">
+	      <div style='color: red'>{{errorMessage}}</div>
+	 </div>
+	 	
+	 
+	 <div *ngIf="errorMessage == null">
+	 	     
+	     You selected a post with Id: <b>{{idParam}}</b>
+		 <br /><br />
+		 <a routerLink="/listposts">Try to receive the 10 Posts again</a>
+	     <br /> <br />
+	 
+	    <table class="table table-striped">
+             <thead>
+                <tr>
+                   <th style="width: '20%'">Id</th>
+		    	   <th style="width: '40%'">Title</th>
+				   <th style="width: '40%'">Body</th>
+                </tr>
+             </thead>
+             <tbody>
+		   
+		      <tr>
+		          <td>{{idPost}}</td>
+			      <td>{{titlePost}}</td>
+				  <td>{{bodyPost}}</td>
+		       </tr>
+		    </tbody>
+		 
+	     </table>
+	  </div>
+    
+</div>
+
+            			 

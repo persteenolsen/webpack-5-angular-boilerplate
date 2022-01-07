@@ -1,0 +1,1 @@
+[{"__symbolic":"module","version":4,"metadata":{"MyInfoComponent":{"__symbolic":"class","decorators":[{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/core","name":"Component","line":2,"character":1},"arguments":[{"selector":"myinfo-page","templateUrl":"./myinfo.component.html","styleUrls":["./myinfo.component.scss"]}]}]}}}]

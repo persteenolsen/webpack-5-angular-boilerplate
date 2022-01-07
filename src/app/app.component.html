@@ -1,0 +1,47 @@
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+
+                       			   
+              <nav class="navbar navbar-expand-lg navbar-light" >
+                    <a routerLink="/">
+			            <img width="50px" [src]="imageSrc" [alt]="imageAlt" /> 
+			        </a> 
+			   
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"         aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+           
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+                    <div class="navbar-nav">
+
+                       <a class="nav-item nav-link" routerLink="/">Home</a>
+                       <a class="nav-item nav-link" routerLink="/about">About</a>
+					   <a class="nav-item nav-link" routerLink="/myinfo">Per Steen Olsen</a>
+					   <a class="nav-item nav-link" routerLink="/listposts">Web API</a>
+					   <a class="nav-item nav-link" routerLink="/404error">Secret</a>
+
+                    </div>
+				  
+                </div>
+   
+             </nav>
+
+			   
+		    <router-outlet></router-outlet>
+			   
+			<br />
+			   
+			 <!--This will display a message from the component on all pages-->
+			 {{message}}
+			   
+			 <br />
+                            
+			  			   
+            </div>
+         </div>
+     </div>
+ 

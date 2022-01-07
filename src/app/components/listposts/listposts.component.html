@@ -1,0 +1,45 @@
+
+<h3 class="p-3 text-center">The results of Web API GET requests</h3>
+
+<br />
+
+Total @angular packages: <b>{{totalAngularPackages}}</b> at the "api.npms.io" Web API   
+    
+ <br /><br />
+
+
+<div class="table-responsive">
+	
+	 <a routerLink="/createpost">Create a new Post</a>
+	 <br /> <br />
+	
+	 <div *ngIf="errorMessage != null">
+	      <div style='color: red'>{{errorMessage}}</div>
+	 </div>
+	 <div *ngIf="errorMessage == null">
+	 
+	    <table id="myTable" class="table table-striped">
+             <thead>
+                <tr>
+                   <th style="width: '10%'">Id</th>
+				   <th style="width: '10%'"></th>
+				   <th style="width: '10%'"></th>
+		    	   <th style="width: '70%'">Title</th>
+                </tr>
+             </thead>
+             <tbody>
+		   
+		      <tr *ngFor="let post of listOfPosts">
+		          <td>{{post.id}}</td>
+				  <td><button type=button class="btn btn-danger" (click)="deletePost(post.id)" >Delete</button></td>
+				  <td><a routerLink="/editpost/{{post.id}}">Edit</a></td>
+			      <td><a routerLink="/thepost/{{post.id}}">{{post.title}}</a></td>
+		       </tr>
+		    </tbody>
+		 
+	     </table>
+	  </div>
+    
+</div>
+
+            			 
