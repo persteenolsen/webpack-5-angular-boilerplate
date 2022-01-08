@@ -14,6 +14,14 @@ module.exports = merge(common, {
 
   // Control how source maps are generated
   devtool: 'inline-source-map',
+  
+  // Where webpack outputs the assets and bundles
+  output: {
+    path: paths.build,
+    filename: '[name].bundle.js',
+    publicPath: '/',
+  }, 
+    
     
   // Enable: It is possible testing in IE 11, but reload / replacement will break due to a bug in webpack 5 !
   // Disable: It is possible to use hot relad / replacement but not using IE 11 !

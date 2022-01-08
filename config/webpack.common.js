@@ -16,11 +16,11 @@ module.exports = {
   entry: [ paths.src + '/main.ts' ],
 
   // Where webpack outputs the assets and bundles
-  output: {
+  /*output: {
     path: paths.build,
     filename: '[name].bundle.js',
     publicPath: '/',
-  },
+  }, */
     
     
   resolve: {
