@@ -7,9 +7,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-// Doing TypeScript type checking
-//const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
-
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 
 
@@ -45,10 +42,7 @@ module.exports = {
     // Removes/cleans build folders and unused assets when rebuilding
     new CleanWebpackPlugin(),
 	
-	// new ForkTsCheckerWebpackPlugin({
-    //  async: false,
-    //}),
-
+	
     // Copies files from target to destination folder
     new CopyWebpackPlugin({
       patterns: [
@@ -78,8 +72,7 @@ module.exports = {
   module: {
     rules: [
 	    
-      // Note: These 2 rules could likely be handled in one test: statement.
-      // However, using 2seperate statements each sttament could have different options if needed
+      // Habling TypeScript / Angular files here
        {
           test: /\.ts$/,
           use: ['ts-loader', 'angular2-template-loader']

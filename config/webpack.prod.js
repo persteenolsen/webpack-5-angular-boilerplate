@@ -49,6 +49,7 @@ module.exports = merge(common, {
   optimization: {
     minimize: true,
     minimizer: [new CssMinimizerPlugin(), "..."],
+	
     // Once your build outputs multiple chunks, this option will ensure they share the webpack runtime
     // instead of having their own. This also helps with long-term caching, since the chunks will only
     // change when actual code changes, not the webpack runtime.
