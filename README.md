@@ -44,7 +44,6 @@ npm prod
 # Angular / Compiler 
 
 - [`@angular/compiler`] (https://angular.io/guide/angular-compiler-options) - Angular compiler
-- [`@angular/compiler-cli`] (https://angular.io/guide/angular-compiler-options) - Angular compiler command line interfaces with options
 
 
 # Angular / Packages
@@ -57,16 +56,11 @@ npm prod
 - [`@angular/upgrade`] (https://angular.io/api/upgrade) - Implements functionality for upgrading Angular JS to Angular
 
 
-# Angular / Services
-
-- [`@angular/http`] (https://angular.io/guide/http) - Communicating with backend services using HTTP
-
-
 # Angular / TypeScript Loaders
 
 - [`angular-router-loader`](https://www.npmjs.com/package/angular-router-loader/) - Load String based modules by Angular Routing
 - [`angular2-template-loader`](https://www.npmjs.com/package/angular2-template-loader/) - Loader that inline HTML and css in Angular
-- [`awesome-typescript-loader`](https://www.npmjs.com/package/awesome-typescript-loader/) - Loading typescript files to be transplid to JS
+- [`ts-loader`](https://www.npmjs.com/package/ts-loader) - Loading typescript files and compile to JS
 
 
 # Some other Loaders
@@ -83,7 +77,6 @@ npm prod
 # Plugins
 
 - [`clean-webpack-plugin`](https://www.npmjs.com/package/clean-webpack-plugin) - Remove/clean build folders
-- [`uglifyjs-webpack-plugin`](https://www.npmjs.com/package/uglifyjs-webpack-plugin) - Minifies and uglyfies the bundle
 - [`html-webpack-plugin`](https://webpack.js.org/plugins/html-webpack-plugin/) - Generate HTML files from template
  
 

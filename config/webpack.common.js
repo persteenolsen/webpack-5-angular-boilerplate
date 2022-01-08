@@ -13,7 +13,7 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 module.exports = {
 	
   // Where webpack looks to start building the bundle and include polyfill
-  entry: [ paths.src + '/main.ts'],
+  entry: [ paths.src + '/main.ts' ],
 
   // Where webpack outputs the assets and bundles
   output: {

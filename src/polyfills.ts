@@ -1,4 +1,3 @@
-
 // Note: IE11 quick / bad heavy solution but works
 import 'core-js';
 
