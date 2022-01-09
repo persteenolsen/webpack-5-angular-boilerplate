@@ -16,7 +16,13 @@ import { CreatePostComponent } from './components/createpost/createpost.componen
 
 import { ErrorComponent } from './components/error/error.component';
 
-import '../styles/index.scss';
+// Note: Does not work with the loaders used in my webpack config files which only load scss components 
+// Using alias defined in Webpack
+import 'styles/index.scss';
+
+// The default way
+//import '../styles/index.scss';
+
 
 @NgModule({
     declarations: [

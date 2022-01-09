@@ -2,9 +2,7 @@ const paths = require('./paths')
 const pathtoresolve = require('path');
 
 const webpack = require('webpack')
-
 const { merge } = require('webpack-merge')
-
 const common = require('./webpack.common.js')
 
 module.exports = merge(common, {
@@ -29,6 +27,7 @@ module.exports = merge(common, {
 
   // Spin up a server for quick development
   devServer: {
+	  
     historyApiFallback: true,
 	
 	// NOTE: Using webpack-dev-server > 4 and webpack-cli > 4 contentBase needs to be replaced by static !!
@@ -42,12 +41,13 @@ module.exports = merge(common, {
     hot: true,
     port: 8080,
   },
-
+   
+    
   plugins: [
     
 	// Note: In this webpack version version it is already enabled by default 
 	// Note: Only update what has changed on hot reload 
-	// Require the statement "module.hot.accept();" in the root index.jsx !
+	// Require the statement "module.hot.accept();" in the root main.ts !
     new webpack.HotModuleReplacementPlugin(),
 	
 	// Note: Maybe not needed beacuse the rule in webpack.common.js take care 

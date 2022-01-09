@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 // Note: Maybe not nessesary for using require to load the image !!
 declare const require: any;
 
+
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',

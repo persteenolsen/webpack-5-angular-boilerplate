@@ -3,7 +3,7 @@
       "version": "1.0.0",
       "repository": {
             "type": "git",
-            "url": "https://github.com/persteenolsen/webpack-5-angular-boileerplate"
+            "url": "https://github.com/persteenolsen/webpack-5-angular-boilerplate"
       },
       "scripts": {
             "start": "webpack serve --config config/webpack.dev.js --progress",
