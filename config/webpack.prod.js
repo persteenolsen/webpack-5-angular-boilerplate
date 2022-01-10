@@ -1,4 +1,7 @@
 const paths = require('./paths')
+
+const helpers = require('./helpers');
+
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common.js')
 
@@ -38,9 +41,9 @@ module.exports = merge(common, {
 	  
     rules: [
      
-	    // Note: For now both the global imported scss file in the module component and the locals scss files 
-		// in the differents components are handles in rules in webpack.common.js 
-	    /* {
+	    // Note: The scss files in the differents components are handles in rules in webpack.common.js 
+		// This rule handles the global imported scss file in the styles folder 
+	    { 
         test: /\.(scss|css)$/,
         use: [
           MiniCssExtractPlugin.loader,
@@ -55,9 +58,9 @@ module.exports = merge(common, {
           'postcss-loader',
           'sass-loader',
         ],
-      }, */
-	    
-	  
+		 include: helpers.root('src', 'styles')
+      }, 
+	 	  
     ],
   },
   

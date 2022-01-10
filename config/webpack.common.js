@@ -83,21 +83,23 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
           test: /\.html$/,
           use: 'html-loader'
        },
-
+       
+	   
        // Handles the injection of CSS using PostCSS starting by the sass-loader and finally to-string-loader 
-	   // This rule handles the locals scss in the differents components 
+	   // In both dev and prod this rule handles the locals scss in the differents components 
 	   {
         test: /\.(scss|css)$/,
         use: [ 'to-string-loader', 'css-loader', 'postcss-loader', 'sass-loader' ],
 		      include: helpers.root('src', 'app')
        }, 
 	   
+	   // Note: Moved to webpack.dev
 	   // This rule handles the global imported scss file in the module component 
-	   {
+	  /* {
         test: /\.(scss|css)$/,
         use: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ],
 		     include: helpers.root('src', 'styles')
-       }, 
+       }, */
 	  
        // Images: Copy image files to build folder
        { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource' },

@@ -1,6 +1,8 @@
 const paths = require('./paths')
 const pathtoresolve = require('path');
 
+const helpers = require('./helpers');
+
 const webpack = require('webpack')
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common.js')
@@ -41,7 +43,22 @@ module.exports = merge(common, {
     hot: true,
     port: 8080,
   },
-   
+  
+  
+  module: {
+	  
+    rules: [
+     	   
+	   // The scss in the differents components are handles in a rule in webpack.common.js 
+	   // This rule handles the global imported scss file in the module component 
+	   {
+        test: /\.(scss|css)$/,
+        use: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ],
+		     include: helpers.root('src', 'styles')
+       },  
+	  
+    ],
+  },
     
   plugins: [
     
