@@ -43,17 +43,17 @@ npm prod
 
 # Angular / Compiler 
 
-- [`@angular/compiler`] (https://angular.io/guide/angular-compiler-options) - Angular compiler
+- [`@angular/compiler`](https://angular.io/guide/angular-compiler-options) - Angular compiler
 
 
 # Angular / Packages
 
-- [`@angular/common`] (https://angular.io/api/common) - Implements fundamental Angular framework functionality
-- [`@angular/animations`] (https://angular.io/api/animations) - Implements how HTML animates in an Angular specific way
-- [`@angular/core`] (https://angular.io/api/core) - Implements core Angular functionality and low level services
-- [`@angular/forms`] (https://angular.io/api/forms) - Implements core Angular form functionality like user input
-- [`@angular/router`] (https://angular.io/api/router) - Implements core Angular router functionality
-- [`@angular/upgrade`] (https://angular.io/api/upgrade) - Implements functionality for upgrading Angular JS to Angular
+- [`@angular/common`](https://angular.io/api/common) - Implements fundamental Angular framework functionality
+- [`@angular/animations`](https://angular.io/api/animations) - Implements how HTML animates in an Angular specific way
+- [`@angular/core`](https://angular.io/api/core) - Implements core Angular functionality and low level services
+- [`@angular/forms`](https://angular.io/api/forms) - Implements core Angular form functionality like user input
+- [`@angular/router`](https://angular.io/api/router) - Implements core Angular router functionality
+- [`@angular/upgrade`](https://angular.io/api/upgrade) - Implements functionality for upgrading Angular JS to Angular
 
 
 # Angular / TypeScript Loaders
@@ -70,7 +70,7 @@ npm prod
 - [`css-loader`](https://webpack.js.org/loaders/css-loader/) - Resolve CSS imports
 - [`style-loader`](https://webpack.js.org/loaders/style-loader/) - Inject CSS into the DOM
 - [`html-loader`](https://webpack.js.org/loaders/url-loader/) - Export HTML as String.
-- [`url-loader`](https://webpack.js.org/loaders/url-loader/) - Loading base64 files -> url
+- [`to-string-loader`](https://www.npmjs.com/package/to-string-loader) - Helps loading scss files imported in components
 - [`file-loader`](https://webpack.js.org/loaders/file-loader/) - Resolve files by import and require
 
 
