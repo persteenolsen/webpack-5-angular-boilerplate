@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
     styleUrls: ['./myinfo.component.scss']
 })
 
-export class MyInfoComponent {}
+export class MyInfoComponent {
+   
+   	 // Note: Works only using alias from webpack and not by tsconfig ! 
+	 imageSrc = require('images/persteenolsen.jpg');
+	 imageAlt = 'Per Steen Olsen';
+
+ }

@@ -6,4 +6,12 @@ import { Component } from '@angular/core';
     styleUrls: ['./home.component.scss']
 })
 
-export class HomeComponent {}
+
+export class HomeComponent {
+
+    
+	 // Note: Works only using alias from webpack and not by tsconfig ! 
+	 imageSrc = require('images/angular.png');
+	 imageAlt = 'Angular';
+
+ }

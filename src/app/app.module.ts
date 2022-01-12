@@ -16,11 +16,11 @@ import { CreatePostComponent } from './components/createpost/createpost.componen
 
 import { ErrorComponent } from './components/error/error.component';
 
-// Note: Does not work with the loaders used in my webpack config files which only load scss components 
-// Using alias defined in Webpack
+// The below statement is handled by seperate rules in webpack configs using to-string-loader 
+// Using alias defined in Webpack syncronized with baseUrl + paths in tsconfig
 import 'styles/index.scss';
 
-// The default way
+// The default way without alias in webpack and baseUrl + paths in tsconfig
 //import '../styles/index.scss';
 
 
