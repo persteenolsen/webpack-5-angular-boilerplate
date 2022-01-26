@@ -1,13 +1,35 @@
-﻿{
+﻿﻿﻿{
     "compilerOptions": {
+	
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "target": "ES5",
-        "baseUrl": "src",
+		
+        "target": "es5",
+        "baseUrl": "./",
+		
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+        
+		"noUnusedLocals" : false,
+
+		"declaration": false,
+        "downlevelIteration": true,
+		"moduleResolution": "node",
+        "importHelpers": true,
+		"module": "es2020",
+        "lib": [
+        "es2018",
+        "dom"
+        ],
         "paths": {
             "@/*": [
                 "app/*"
             ]
         }
-    }
+    },
+    "include": [ "src" ],
+	"exclude": ["node_modules"],
+    "files": [
+             "index.d.ts"
+    ]
 }

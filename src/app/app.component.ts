@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 // Note: Maybe not nessesary for using require to load the image !!
 // declare const require: any;
-
  
 @Component({
     selector: 'app-root',
@@ -12,12 +11,12 @@ import { Component } from '@angular/core';
 
 
 export class AppComponent {
-    
+ 
 	// This message will be displayed on every pages at the bottom
     message = 'A single page application made in Angular';
 			
 	// Note: This does not work by tsconfig !
-	// import imageSrc from 'images/favicon.png';
+	//import imageSrc from 'images/favicon.png';
 	   		
     // The following "tricks" is Webpack and not Angular cli !	
     // Note: Without using "esModule: false" in webpack.common.js an image [src] will need require + .default suffix to load !

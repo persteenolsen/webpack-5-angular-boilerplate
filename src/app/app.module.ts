@@ -34,7 +34,7 @@ import 'styles/index.scss';
 		SelectedPostComponent,
 		EditPostComponent,
 		CreatePostComponent,
-        ErrorComponent		
+        ErrorComponent
 		
     ],
     imports: [
